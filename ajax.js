@@ -21,7 +21,8 @@ $.post( "ajax/test.html", function( data ) {
     $( ".result" ).html( data );
 });
 
-
+/* if GET url = demo_get2.asp?fname=Henry&lname=Ford */
+/*If POST params = fname=Henry&lname=Ford*/
 AjaxRequest = function(params, id){
 
     var XHR=window.XDomainRequest||window.XMLHttpRequest;
