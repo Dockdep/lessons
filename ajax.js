@@ -14,7 +14,7 @@ $.ajax({
     url: url,
     data: data,
     success: success,
-    dataType: dataType
+    dataType: 'json'
 });
 
 $.post( "ajax/test.html", function( data ) {
@@ -32,4 +32,4 @@ AjaxRequest = function(params, id){
     xhr.onload=function(){var response=null;};
     xhr.onerror=function(){var response="Error";};
     xhr.send(params);
-}
+};
